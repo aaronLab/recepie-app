@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 
-from .. import models
+from core import models
 
 
 def sample_user(email='test@test.test', password='testpass'):

@@ -4,7 +4,7 @@ from rest_framework.permissions import IsAuthenticated
 
 from core.models import Tag
 
-from . import serializers
+from recipe import serializers
 
 
 class TagViewSet(viewsets.GenericViewSet,
