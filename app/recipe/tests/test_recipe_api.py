@@ -19,7 +19,7 @@ def detail_url(recipe_id):
 
 def sample_tag(user, name='Main course'):
     """Create and return a sample tag"""
-    return Tag.objects.create(user=user, nam=name)
+    return Tag.objects.create(user=user, name=name)
 
 
 def sample_ingredient(user, name="Cinnamon"):
