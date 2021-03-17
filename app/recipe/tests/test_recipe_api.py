@@ -265,8 +265,8 @@ class RecipeImageUploadTests(TestCase):
         recipe2 = sample_recipe(user=self.user, title='Chicken cacciatore')
         ingredient1 = sample_ingredient(user=self.user, name='Feta cheese')
         ingredient2 = sample_ingredient(user=self.user, name='Chicken')
-        recipe1.ingredients.add(recipe1)
-        recipe2.ingredients.add(recipe2)
+        recipe1.ingredients.add(ingredient1)
+        recipe2.ingredients.add(ingredient2)
         recipe3 = sample_recipe(user=self.user, title='Steak and mushrooms')
 
         res = self.client.get(
